@@ -1,0 +1,122 @@
+*{
+    transition: all 0.7s ease-out;
+}
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 0, 43);
+}
+
+#evil{
+    position: absolute;
+    white-space: nowrap;
+    font-size: 2rem;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: rgb(255, 0, 43);
+    font-weight: 700;
+    z-index: 100;
+    background: aliceblue;
+}
+
+.heart{
+    position: absolute;
+    width: 30rem;
+    opacity: 0.3;
+}
+.heart1{
+    top: 0;
+    right: 0;
+    transform: rotate(10deg);
+}
+.heart2{
+    width: 60rem;
+    bottom: -20%;
+    right: -10%;
+    transform: rotate(-10deg);
+}
+.heart3{
+    width: 70rem;
+    top: -30%;
+    left: -15%;
+    transform: rotate(150deg);
+}
+
+.heart4{
+    width: 30rem;
+    bottom: -5%;
+    left: -1%;
+    transform: rotate(15deg);
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle{
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: rgba(255, 0, 43, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    /* backdrop-filter: blur(9.4px); */
+}
+
+.circle::before{
+    content: "";
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    background: rgba(255, 0, 43, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: 15;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle::after{
+    content: "";
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    background: rgba(255, 0, 43, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: 16;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header h1 {
+    font-size: 4rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .header h1{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header h1{
+        font-size: 2rem;
+    }
+}
