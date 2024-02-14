@@ -2,7 +2,7 @@ const evilBtn = document.getElementById('evil')
 const OFFSET = 200
 
 evilBtn.addEventListener('click', () => {
-    alert('Hahaha, you thought you was smart.')
+    alert('Mumu, wetin you dey find?')
     window.close()
 })
 
